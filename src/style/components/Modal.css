@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.modal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1333737378;
+   opacity: 1;
+   overflow: hidden;
+    visibility: visible;
+    padding: 20px 0;
+ display: none;
+}
+.modal:target{
+    display: flex;
+}
+.modal_{
+    width: 100%;
+    min-height: 550px ;
+    padding: 0px 20px;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    border-radius: 1.3em;
+    /*visibility: hidden;*/
+    /* transform: translate(-50%, -50%); */
+    padding: 5px 15px;
+    }
+    .modal__close{
+        color: #363636;
+        /* color:green; */
+        font-size:40px;
+        position: relative;
+        display: flex;
+        align-self: stretch;
+        justify-content: flex-end;
+        padding: 0px 0px;
+    }    
+
+ .sss{
+    margin: 3px 0px;
+    padding: 15px 0px;
+ }
+ .modal_ .text{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 100px;
+    margin-bottom: 0px;
+ }
+ .modal_ .text .text_p{
+     box-shadow: 0 2px 5px rgba(0,0,0, 0.4);
+    padding: 5px 9px;
+    color: #262626;
+}
+.modal_ .text .text_p textarea{
+    width: 100%;
+    height: 100%;
+    border:0px;
+    overflow: hidden;
+    color: black;
+    opacity: .5;
+    background: white;
+    font-size: 16px;
+}
+.btn_text_{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px;
+}
+.btn_text_ .btnn{
+
+    display: none;
+    padding: 10px 50px;
+    transition: all .8s;
+    border-radius: 20px;
+    border: 0px;
+    font-size: 17px;
+    background: #2b98f0;
+    text-transform: capitalize;
+    color: #f5f5f5;
+    outline: none;
+    letter-spacing: 2px;
+    transition: all 1s;
+}
+.btn_text_ .btnn:hover{
+    font-weight: 700;
+    background: #1e293a;
+    color: white;
+}
+.modal_text{
+    line-height: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    padding: 5px 0px ;
+}
+
+.modal_ .img{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0;
+    margin-bottom: 10px;
+    justify-content:center;;
+}
+.modal_ .img .edit_icon{
+    padding: 0px 0px;
+    width: 100%;
+    display: grid;
+    /* align-items: flex-end;
+    align-self: flex-end; */
+    justify-self: end;
+    border-radius: 20px;
+    background: #c9c9c9;
+}
+.modal_ .img .edit_icon i{
+    font-size: 25px;
+    color: #1e293a;
+}
+.modal_ .img .edit_icon .edit_{
+    overflow: hidden;
+}
+.modal_ .pict{
+    display: flex;
+    justify-content: center;
+    padding: 0px 0;
+    overflow: hidden;
+}
+.modal_ .pic{
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    object-position: top;
+}
+.modal_ .text_h2{padding: 0px 0px;display: grid;
+    justify-content: center;}
+.modal_ .label{
+    padding: 0px 0px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+.modal_ .label1{
+    outline: none;
+    border: 0;
+    background: transparent;
+    font-size: 20px;
+    color: #262626;
+    text-align: center;
+}
+.modal_  .user_name{
+    outline: none;
+    border: 0;
+    background: transparent;
+    font-size: 14px;
+    text-align: center;
+    background: #2b98f0;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+}
+.modal_  .user_name::placeholder{color: white;}
+
+.modal_ .icons{
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px;
+    padding: 0px;
+}
+.modal_ .icons .icon{
+    margin: 3px;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    display: flex;
+    text-decoration: none;
+    color: #1e293a;
+    justify-content: center;
+    transition: background 1s ease-in-out, transform .5s ease-in;
+}
+.modal_:hover{box-shadow: 0px 1px 3px #fff;}
+.modal_ .icons .icon:hover{
+    background: #e91e63;
+    transform: rotateY(360deg);
+}
+
+.modal_ .icons .icon img{
+    width: 20px;
+    height: 20px;
+}

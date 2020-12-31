@@ -1,0 +1,37 @@
+footer{
+    background: #fff;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 60px;
+    height: 190px;
+    padding: 8px 0;
+    margin: 200px 0 0;
+    transform: translateX(20px);
+}
+footer .foo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .foo .las{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(10px,-5px);
+}
+footer .foo .las .las-s{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 50px;
+    background: #287fc5;
+    color: #fff;
+}

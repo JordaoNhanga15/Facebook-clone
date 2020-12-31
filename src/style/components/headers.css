@@ -1,0 +1,104 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+*::-webkit-scrollbar{
+    width: .6rem;
+}
+*::-webkit-scrollbar-track{
+    background: #333;
+}
+*::-webkit-scrollbar-thumb{
+    background: linear-gradient(to top,#909fad,#094e86);
+    border-radius: 10px;;
+}
+@font-face{
+    src:url('../../style/components/Roboto/Roboto-Light.ttf');
+    font-family:'Lato'
+}
+body{
+    background: #e2eafc;
+    font-family: 'Lato';
+}
+header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 55;
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    /* position: relative; */
+}
+header ul{list-style-type: none;}
+header div.left{
+    box-shadow: 1px 3px 9px   rgb(0,119,187);
+    width: 38px;
+    height: 38px;
+}
+header div.left img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+header nav ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+}
+header nav ul li {
+    padding: 0px 0;
+    position: relative;
+}
+header nav ul li .a{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 10px;
+    position: relative;
+}
+header nav ul li .active  {
+    /* display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 20px;
+    position: relative;
+    transition: all .3s ease; */
+    fill: #287fc5;
+}
+header nav ul li .active svg {
+    fill: #287fc5;
+}
+
+header nav ul li .active::after{
+    content: '';
+    position: absolute;
+    transition: all 1s ease;
+    bottom: 0%;
+    left:  0;
+    height: 3px;
+    border-radius: 55px;
+    width: 100%;
+    background: #287fc5;
+    box-shadow: 1px 3px 9px   #287fc5;
+}
+
+header nav ul li img{
+    width: 50px;
+    height: 50px;
+    border-radius:12px;
+    object-fit: cover;
+    object-position: center;
+}
+header nav ul li.mi_pic{
+    width: 48px;
+    height: 48px;
+    box-shadow: 0px 3px 5px   rgba(0,0,0,7);
+}

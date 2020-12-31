@@ -1,0 +1,371 @@
+.post{
+    display: flex;
+    gap: 20px;
+    margin: 70px 0 ;
+}
+.post aside h1{
+    padding-bottom: 20px;
+}
+.post aside:nth-child(1) article{
+    display: flex;
+    gap: 20px;
+    flex-direction: column; 
+    align-items: center;
+}
+.post aside:nth-child(1) h1{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.post .post-container{
+    width: 400px;
+    border-radius: 20px;
+    background: #fff;
+    padding: 6px 14px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    box-shadow: 0px 4px 16px rgba(0, 0, 0,.7); 
+}
+
+.post .post-container .textarea{
+    width: 100%;
+    height: 150px;
+    /* border-radius: 10px; */
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+}
+.post .post-container .textarea input{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.post .post-container .textarea label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 20px;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #595f6e;
+}
+.post .post-container .textarea label::after{
+    content: '';
+    left: -1px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition:transform .3s ease;
+}
+.post .post-container .textarea .content-name{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all .3s ease;
+    /* z-index: 222; */
+}
+/* .post .post-container .textarea input:focus{outline: none;} */
+.post .post-container .textarea input:focus + .label-name .content-name,
+.post .post-container .textarea input:valid + .label-name .content-name
+{
+    transform: translateY(-130px);
+    z-index: 22222;
+    font-size: 14px;
+    color: #5fa8d3;
+    /* padding: 28px 20px; */
+}
+.post .post-container .textarea input:focus + .label-name::after,
+.post .post-container .textarea input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+.post .post-container .icones{
+    display: flex;
+    margin: 10px 0;
+    gap: 20px;
+}
+.post .post-container .button{
+    text-align: center;
+    display: flex;
+    align-self: stretch;
+    margin: 20px 0px 10px 0px;
+}
+.post .post-container .button input[type="button"]{
+    display: flex;
+    border-radius: 25px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    font-size: 22px;
+    transition: 1s all;
+    color: rgb(0,119,187);
+    border: 1px solid rgb(0,119,187);
+}
+.post .post-container .button input[type="button"]:hover{
+    background: rgb(0,119,187);
+    color: white;
+}
+/*  */
+.post .post-1{
+    display: flex;
+    gap: 15px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 10px 14px;
+    background: #fff;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0,.7);
+}
+.post .post-1 .header-post-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.post .post-1 .header-post-1 .img-post-{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+}
+.post .post-1 .header-post-1 .mar{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+.post .post-1 .header-post-1 .text{
+    display: flex;
+    gap: 12px;
+    /* justify-content: space-evenly; */
+    flex-direction: column;
+    height: 100%;
+}
+.post .post-1 .header-post-1 .text small{
+    font-size: 13px;
+    color: #555;
+}
+.post .post-1 .header-post-1 .text span{
+    color: #000;
+    font-weight: 600;
+}
+.post .post-1 .body-post{
+    margin: 8px 0;
+}
+.post .post-1 .body-post p{
+    color: #000;
+    font-weight: 900;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.post .post-1 .body-post .img-post{
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    object-position: top;
+    border-radius: 10px;
+}
+.post .post-1 .footer-post{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.post .post-1 .footer-post .reactions{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.post .post-1 .footer-post .reacti{
+    position: absolute;
+    background: #555;
+    border-radius: 20px;
+    padding: 4px 4px 4px 4px;
+    top: 0%;
+    left: 0;
+    transform: translate(25px,-25px);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    gap: 10px;
+    display: none;
+    transition: transform .5s ease, all 1s ease;
+}
+.post .post-1 .footer-post .reacti img:hover{
+    transform: scale(1.3);
+}
+.post .post-1 .footer-post .reacti svg:hover{
+    transform: scale(1.3);
+}
+
+.post .post-1 .footer-post .reacti img{
+    border-radius: 30px;
+    transform: scale(.9);
+    object-fit: cover;
+    object-position: center;
+}
+.post .post-1 .footer-post .reacti svg{
+    transform: scale(.9);
+    object-fit: cover;
+    object-position: center;
+}
+/*  */
+.post .u-friends{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.post .u-friends .box-container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}   
+.post .u-friends h1{
+    margin-bottom: 0px;
+}
+.post .u-friends .box-container .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    width: 300px;
+    transition: transform 1s ease;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.post .u-friends .box-container .box:hover{
+    transform: translateX(-10px);
+}
+
+.post .u-friends .box-container .box .img-box{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+}
+.post .u-friends .box-container .box .mar{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+.post .u-friends .box-container .box .txt-box{
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    flex-direction: column;
+    align-self: stretch;
+}
+.post .u-friends .box-container .box .txt-box .statu{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.post .u-friends .box-container .box .txt-box .dd{
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background: green;
+    box-shadow: 0px 4px 19px green;
+}
+.post .u-friends:nth-child(2){
+    margin-top: 60px;
+}
+.post .u-friends:nth-child(2) .box-container .box:nth-child(2) .txt-box .dd{
+    background: red;
+    box-shadow: 0px 4px 19px red;
+}
+.post .u-friends:nth-child(1) .box-container .box:nth-child(2) .txt-box .dd{
+    background: red;
+    box-shadow: 0px 4px 19px red;
+}
+
+
+
+/*  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.modal{
+    width: 100%;
+    background: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 1333737378;
+    transform: translateX(-7%);
+   opacity: 1;
+   position: absolute;
+   overflow: hidden;
+    visibility: visible;
+    padding: 0px 0;
+ display: none;
+}
+.modal:target{
+    display: flex;
+}
+.modal_{
+    z-index: 2222222;
+    width: 100%;
+    min-height: 550px ;
+    padding: 0px 20px;
+    /* background: #fff; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    border-radius: 25px;
+    border-radius: 1.3em;
+    /*visibility: hidden;*/
+    /* transform: translate(-50%, -50%); */
+    padding: 5px 15px;
+    }
+    .modal__close{
+        color: #363636;
+        /* color:green; */
+        z-index: 82882828282;
+        font-size:40px;
+        position: relative;
+        display: flex;
+        align-self: stretch;
+        justify-content: flex-end;
+        padding: 10px 0px;
+    }    
+
+ .sss{
+    margin: 13px 0px;
+    padding: 15px 0px;
+ }
+.modal_ .pict{
+    display: flex;
+    justify-content: center;
+    padding: 0px 0;
+    overflow: hidden;
+}
+.modal_ .pic{
+    width: 1200px;
+    height: 540px;
+    object-fit: cover;
+    object-position: top;
+}
